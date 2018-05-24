@@ -1,3 +1,5 @@
+import { StyleSheet } from 'react-native';
+
 const React = require("react-native");
 const { StyleSheet, Dimensions, Platform } = React;
 
@@ -6,9 +8,22 @@ const deviceHeight = Dimensions.get("window").height;
 
 const textFontSize = deviceWidth * 0.026;
 
+export default StyleSheet.create({
+  gradient: {
+    ...StyleSheet.absoluteFillObject
+  }
+})
+
+export const colors = {
+  black: '#1a1917',
+  gray: '#888888',
+  background1: '#B721FF',
+  background2: '#21D4FD'
+};
+
 export default {
     Header: {
-      backgroundColor: Platform.OS === "android" ? "#009be8" : "#009be8"
+      backgroundColor: Platform.OS === "android" ? "#009be8" : null
     },
     logoImage: {
       width: 100,

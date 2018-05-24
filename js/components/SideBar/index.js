@@ -92,7 +92,7 @@ export default class SideBar extends Component {
 			shadowOffsetWidth: 1,
 			shadowRadius: 4,
 			appVersion : "1.0.0",
-			userIcon : drawerUserIcon,
+            userIcon : drawerUserIcon,
 			subBanner: "https://service.sunsang24.com/upload/board/201708/92e6a27f08f07af354cfc1d88ab5a0cb_mini.jpg"
 		};
 	}
