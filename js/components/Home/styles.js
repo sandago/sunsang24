@@ -14,7 +14,8 @@ export default StyleSheet.create({
   },
   logoImage: {
     width: 100,
-    height: 25
+    height: 25,
+    tintColor: Platform.OS === "android" ? null : 'gray'
   },
   mainMenu: {
     alignSelf: "stretch",

@@ -13,15 +13,14 @@ const mainFinsingInfo = require("../../../assets/main_fishing_info.png");
 const mainFishingSchedule = require("../../../assets/main_fishing_schedule.png");
 const mainWeather = require("../../../assets/main_weather.png");
 
-
 export default class Home extends Component {
-	render() {
+	render() {	
 		return (
 			<Container>
 				<Header style={styles.Header} androidStatusBarColor="#009be8">
                     <Left style={{flex:1}}>
                         <Button transparent onPress={() => this.props.navigation.openDrawer()}>
-                            <Icon name='menu' style={{color: "white"}} />
+                            <Icon name='menu' />
                         </Button>
                     </Left>
                     <Body style={{flex:1}}>

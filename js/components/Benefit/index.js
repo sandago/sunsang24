@@ -11,8 +11,8 @@ export default class Benefit extends Component {
 			<Container>
 				<Header style={styles.Header} androidStatusBarColor="#009be8">
                     <Left>
-                        <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-                            <Icon name='menu' />
+                        <Button transparent onPress={() => this.props.navigation.openDrawer()}>
+                        <Icon name='menu' />
                         </Button>
                     </Left>
                     <Body>

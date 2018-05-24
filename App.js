@@ -23,6 +23,6 @@ export default class App_Container extends React.Component {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
     }
-    return  <App />;
+    return <App />;
   }
 }
