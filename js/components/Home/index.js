@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import { View, Image, TouchableHighlight } from "react-native";
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Content, Text } from "native-base";
-import LinearGradient from 'react-native-linear-gradient';
-import Carousel, { Pagination } from 'react-native-snap-carousel';
 import * as Animatable from 'react-native-animatable';
 
-
-import styles, { colors } from "./styles";
+import styles from "./styles";
 
 const ReactN = require("react-native");
 const { Platform, Dimensions } = ReactN;
@@ -18,18 +15,6 @@ const mainWeather = require("../../../assets/main_weather.png");
 
 
 export default class Home extends Component {
-
-    get gradient () {
-        return (
-            <LinearGradient
-              colors={[colors.background1, colors.background2]}
-              startPoint={{ x: 1, y: 0 }}
-              endPoint={{ x: 0, y: 1 }}
-              style={styles.gradient}
-            />
-        );
-    }
-    
 	render() {
 		return (
 			<Container>
@@ -45,9 +30,6 @@ export default class Home extends Component {
                     <Right style={{flex:1}}></Right>
                 </Header>
 				<Content style={{backgroundColor: "gray"}}>
-                    <View>
-                        { this.gradient }
-                    </View>
 					<View>
 						<Animatable.Image source={mainFinsingInfo} style={styles.mainMenu} animation="bounceInRight" delay={0} />
 						<Animatable.Image source={mainFishingSchedule} style={styles.mainMenu} animation="bounceInRight" delay={500} />
